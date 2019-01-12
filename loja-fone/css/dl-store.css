@@ -1,0 +1,134 @@
+.dl-store{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.dl-store > .title{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.dl-store > .item{
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.dl-store >.item.-heart{
+    position: absolute;
+    transform: translateX(-100%);
+    top: 8px;
+    left: -47px;
+    width: 33px;
+    height: 29px;
+}
+
+.dl-store > .item.-star{
+    margin-bottom: 10px;
+}
+.dl-store .star{
+    display: inline-block;
+}
+
+.dl-store .star.-active > .icon{
+    display: none;
+}
+
+.dl-store .star.-active > .-active{
+    display: block;
+}
+
+.dl-store .icon{
+    cursor: pointer;
+    transition: transform 100ms linear;
+}
+
+.dl-store .icon.-active{
+    display: none;
+}
+
+.dl-store > .item.-active .icon{
+    display: none;
+}
+
+.dl-store > .item.-active .icon.-active{
+    display: block;
+}
+
+.dl-store .icon:hover{
+    transform: scale(1.2);
+}
+
+.dl-store > .item.-star + .item{
+    margin-left: 7px;
+}
+
+.dl-store > .item.-info{
+    width: 200px;
+    text-align: right;
+}
+
+.dl-store > .item.-last{
+    margin-bottom: 72px;
+}
+
+.dl-store .contrast{
+    text-transform: uppercase;
+    float: left;
+}
+
+.dl-store > .text{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.dl-store > .text.-more{
+    margin-bottom: 0;
+}
+
+.dl-store .action{
+    color: inherit;
+   text-decoration: none;
+}
+
+@media (max-width: 1310px){
+    .dl-store{
+        width: 50%;
+        min-width: 655px;
+        margin: 0 auto 60px;
+    }
+    .dl-store > .title{
+        font-size: 35px;
+        text-align: center;
+
+    }
+    .dl-store > .item.-star {
+        float: left;
+        margin-right: 10px;
+    }
+    .dl-store > .item.-number{
+        padding-top: 4px;
+    }
+    .dl-store >.item.-heart{
+        left: auto;
+        transform: none;
+    }
+}   
+
+@media (max-width: 720px){
+    .dl-store {
+        width: 90%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 475px) {
+    .dl-store >.item.-heart{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dl-store > .title{
+     margin-bottom: 15px;
+    }
+}
